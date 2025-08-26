@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
+  useEffect(() => {
+    // Load Credly embed script
+    const script = document.createElement('script');
+    script.src = '//cdn.credly.com/assets/utilities/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -19,43 +29,32 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              I am a results-driven <span className="purple">Backend Engineer</span> with expertise in designing and building robust, scalable, and high-performance systems.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              With a solid foundation in <i><b className="purple">Python and Node.js</b></i>, and hands-on experience with <i><b className="purple">FastAPI, Flask, Django, Express.js, and NestJS</b></i>, I create clean, maintainable, and efficient solutions that power modern applications.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I specialize in leveraging <i><b className="purple">AWS cloud services</b></i> to build secure, cloud-ready, and scalable architectures tailored to business needs. I hold <i><b className="purple">AWS Security Champion and AWS Serverless</b></i> certifications.
+              <br />
+              <br />
+              My expertise includes building <i><b className="purple">RESTful APIs, microservices, and cloud-native architectures</b></i> with seamless AWS integrations including Lambda, EC2, S3, RDS, and DynamoDB.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
+          <Col md={4} className="certificates-section">
+            <div 
+              data-iframe-width="150" 
+              data-iframe-height="270" 
+              data-share-badge-id="308bc22b-672b-4927-b3cf-040423aac6a1" 
+              data-share-badge-host="https://www.credly.com"
+            />
+            
+            <div 
+              data-iframe-width="150" 
+              data-iframe-height="270" 
+              data-share-badge-id="60ef8858-936e-4b21-9dda-e70e6f2d5ed7" 
+              data-share-badge-host="https://www.credly.com"
+            />
           </Col>
         </Row>
         <Row>
@@ -67,42 +66,12 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/cedharveymarcos"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>
