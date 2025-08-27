@@ -35,7 +35,7 @@ function Home2() {
               With a solid foundation in <i><b className="purple">Python and Node.js</b></i>, and hands-on experience with <i><b className="purple">FastAPI, Flask, Django, Express.js, and NestJS</b></i>, I create clean, maintainable, and efficient solutions that power modern applications.
               <br />
               <br />
-              I specialize in leveraging <i><b className="purple">AWS cloud services</b></i> to build secure, cloud-ready, and scalable architectures tailored to business needs. I hold <i><b className="purple">AWS Security Champion and AWS Serverless</b></i> certifications.
+              I specialize in leveraging <i><b className="purple">AWS cloud services</b></i> to build secure, cloud-ready, and scalable architectures tailored to business needs. I hold <i><b className="purple">AWS Security Champion, AWS Serverless, and Amazon Aurora PostgreSQL</b></i> certifications.
               <br />
               <br />
               My expertise includes building <i><b className="purple">RESTful APIs, microservices, and cloud-native architectures</b></i> with seamless AWS integrations including Lambda, EC2, S3, RDS, and DynamoDB.
@@ -55,6 +55,12 @@ function Home2() {
               data-share-badge-id="60ef8858-936e-4b21-9dda-e70e6f2d5ed7" 
               data-share-badge-host="https://www.credly.com"
             />
+            <div 
+            data-iframe-width="150"
+             data-iframe-height="270" 
+             data-share-badge-id="c549d640-79c6-45e7-9652-b370684f2f47" 
+             data-share-badge-host="https://www.credly.com"
+             />
           </Col>
         </Row>
         <Row>
