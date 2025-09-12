@@ -29,10 +29,10 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a results-driven <span className="purple">Backend Engineer</span> with expertise in designing and building robust, scalable, and high-performance systems.
+              I am a results-driven <span className="purple">FullStack Developer</span> with expertise in designing and building robust, scalable, and high-performance systems.
               <br />
               <br />
-              With a solid foundation in <i><b className="purple">Python and Node.js</b></i>, and hands-on experience with <i><b className="purple">FastAPI, Flask, Django, Express.js, and NestJS</b></i>, I create clean, maintainable, and efficient solutions that power modern applications.
+              With a solid foundation in <i><b className="purple">AI/ML Engineering using Python, R</b></i>, and hands-on experience with <i><b className="purple">FastAPI, Flask, Django, Next js, Laravel, ASP.NET, SpringBoot, Express.js, and NestJS</b></i>, I create clean, maintainable, and efficient solutions that power modern applications.
               <br />
               <br />
               I specialize in leveraging <i><b className="purple">AWS cloud services</b></i> to build secure, cloud-ready, and scalable architectures tailored to business needs. I hold <i><b className="purple">AWS Security Champion, AWS Serverless, and Amazon Aurora PostgreSQL</b></i> certifications.
@@ -41,7 +41,7 @@ function Home2() {
               My expertise includes building <i><b className="purple">RESTful APIs, microservices, and cloud-native architectures</b></i> with seamless AWS integrations including Lambda, EC2, S3, RDS, and DynamoDB.
             </p>
           </Col>
-          <Col md={4} className="certificates-section">
+          <Col md={3} className="certificates-section" style={{ marginLeft: "auto", paddingTop: "70px" }}>
             <div 
               data-iframe-width="150" 
               data-iframe-height="270" 
@@ -72,7 +72,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/cedharveymarcos"
+                  href="https://github.com/mero-718"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
